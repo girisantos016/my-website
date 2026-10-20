@@ -192,6 +192,64 @@
 </div></div></section>
 
 <section id="consultancy"><div class="wrap"><div class="head"><p class="num">06 / Technical Consultancy</p><div><h2>Infrastructure & Innovation</h2></div></div><div class="consult-grid"><article class="consult"><div class="symbolbox">⌘</div><h3>Department of Electronics and Computer Engineering, Pulchowk Campus, IOE, TU, Lalitpur, Nepal</h3><p>AI Laboratory and GPU Computing Infrastructure</p><ul><li>Contributed to technical planning and establishment of AI laboratory infrastructure.</li><li>Prepared specifications and cost estimates for more than six GPU-enabled computing machines.</li><li>Supported technical evaluation during equipment procurement and tender processes.</li></ul></article><article class="consult"><div class="symbolbox">▦</div><h3>Kathmandu Metropolitan City, Kathmandu, Nepal</h3><p>Technical consultancy for municipal school technology procurement.</p><ul><li>Contributed technical expertise for procurement involving more than 200 computers and 300 smartboards.</li><li>Supported preparation and review of technical requirements.</li><li>Contributed to technical evaluation of procurement submissions.</li></ul></article><article class="consult"><div class="symbolbox">▤</div><h3>Patan Multiple Campus</h3><p>Advanced Computing Laboratories</p><ul><li>Contributed technical expertise for laboratory establishment.</li><li>Supported infrastructure planning and assessment of computing requirements.</li></ul></article><article class="consult"><div class="symbolbox">⌘</div><h3>Technical expertise</h3><p>Institutional computing and educational technology.</p><ul><li>IT infrastructure planning and technical specifications.</li><li>GPU computing and AI laboratory development.</li><li>Cost estimation and technical tender evaluation.</li><li>Educational technology and computing facilities.</li></ul></article></div><div class="software"><h3>Institutional software and digital transformation projects</h3><div class="software-row"><strong>Tribhuvan University Teaching Hospital — HMIS</strong><p>Contributed to institutional software project activities associated with hospital information management and digital workflows.</p></div><div class="software-row"><strong>Deposit and Credit Guarantee Fund</strong><p>Participated in a software and digital transformation project associated with an institutional financial services organization.</p></div></div></div></section>
-<section id="gallery"><div class="wrap"><div class="head"><p class="num">07 / Gallery</p><div><h2>A visual records</h2>
-</main><footer><div class="wrap foot"><div><strong>Santosh Giri</strong><p>Assistant Professor of Computer Engineering · Pulchowk Campus, Tribhuvan University, Nepal</p><p>Academic portfolio · Research · Teaching · Institutional technology</p></div><a class="toplink" href="#top">Back to top ↑</a></div></footer>
-<script>const menu=document.getElementById('menu'),links=document.getElementById('links');menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));});links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false');}));document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('.pub').forEach(p=>p.hidden=btn.dataset.filter!=='all'&&p.dataset.type!==btn.dataset.filter);}));</script></body></html>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="head">
+      <p class="num">07 / Gallery</p>
+      <div>
+        <h2>Visual Records</h2>
+      </div>
+    </div>
+
+    <!-- Your gallery content goes here -->
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <strong>Santosh Giri</strong>
+      <p>Assistant Professor of Computer Engineering · Pulchowk Campus, Tribhuvan University, Nepal</p>
+      <p>Academic portfolio · Research · Teaching · Institutional technology</p>
+    </div>
+    <a class="toplink" href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script>
+const menu = document.getElementById('menu');
+const links = document.getElementById('links');
+
+menu.addEventListener('click', () => {
+  const open = links.classList.toggle('open');
+  menu.setAttribute('aria-expanded', String(open));
+});
+
+links.querySelectorAll('a').forEach(a =>
+  a.addEventListener('click', () => {
+    links.classList.remove('open');
+    menu.setAttribute('aria-expanded', 'false');
+  })
+);
+
+document.querySelectorAll('.filter').forEach(btn =>
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter').forEach(b =>
+      b.classList.remove('active')
+    );
+    btn.classList.add('active');
+
+    document.querySelectorAll('.pub').forEach(p => {
+      p.hidden =
+        btn.dataset.filter !== 'all' &&
+        p.dataset.type !== btn.dataset.filter;
+    });
+  })
+);
+</script>
+</body>
+</html>
